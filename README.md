@@ -39,8 +39,7 @@ DeviceFileEvents
 <pre>
 <code>
 DeviceFileEvents
-| where PreviousFileName contains "Q1-2025-ResearchAndDevelopment.pdf"
-   or PreviousFileName contains "Q2-2025-HumanTrials.pdf"
+| where PreviousFileName contains "Q2-2025-HumanTrials.pdf"
    or PreviousFileName contains "Q3-2025-AnimalTrials-SiberianTigers.pdf"
 | order by TimeGenerated desc
 | project TimeGenerated, DeviceName, InitiatingProcessAccountName, PreviousFileName, FileName
